@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Volunteer Page </title>
+
+        <!-- Link to the global and volunteer-specific CSS files -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="volunteerstyle.css">
+    </head>
+    <body>
+
+        <!--Header section-->
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Life Below Water logo">
+                <div class="logo-text">
+                    <h1>Life Below Water</h1>
+                    <p>Protecting Marine Life & Promoting Sustainability</p>
+                </div>
+            </div>
+
+            <!-- Responsive Menu Toggle -->
+            <input type="checkbox" id="menu-toggle"> 
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <nav> <!--Navigation Bar-->
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html" class="active">Volunteer</a></li>
+                    <li><a href="table.html">Data</a></li>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+                <!-- Volunteer Opportunities Section -->
+                <section class = "volunteer-section">
+                    <div class = " title"><h2> Volunteer Opportunities</h2></div>
+                    <div class = "description"><p><b> We are always looking for volunteers to help us with our mission. If you are interested in volunteering, please fill out the form below and we will get back to you as soon as possible.</b></p></div>
+
+                     <!-- Dropdown to filter volunteer opportunities -->
+                    <select class = "filter-dropdown">
+                        <option> Most Popular </option>
+                        <option> Newest </option>
+                        <option> All </option>
+                    </select>
+
+                        <!-- Container for volunteer opportunity cards -->
+                        <div class = "card-container">
+                            <div class ="card">
+                                <img src = "images/volunteer1.jpg" alt = "Beach Cleanup">
+                                <h3> Beach Cleanup </h3>
+                                <p> Volunteers collect and analyze ocean waste, promote sustainable practices, and participate in beach and underwater cleanups.</p>
+                                <div class = "info" >
+                                    <p class = "info-box"> Ocean Cleanup & Plastic Pollution Prevention </p>
+                                    <p class = "info-box"> 4-6 hours per day </p>
+                                </div>
+                                <div class = "duration">
+                                    <img src ="images/duration.jpg" alt = "duration">
+                                    <p><strong> Duration:</strong> 1 - 12 weeks </p>
+                                    <img src ="images/volunteer.jpg" alt = "volunteer">
+                                    <p><strong>Volunteers :</strong> aged 16+ and families</p>
+                                </div>
+                                <button class = "view-btn"> View Button </button>
+                                <button class = "apply-btn"> Apply </button>
+                            </div>
+
+                            <div class ="card">
+                                <img src = "images/volunteer2.jpg" alt = " Marine Wildlife Conservation">
+                                <h3>  Marine Wildlife Rescue and Rehabilitation Program</h3>
+                                <p> Participants assist in rescuing, treating, and releasing injured marine animals like sea turtles, dolphins, and seals.</p>
+                                <div class = "info">
+                                    <p class = "info-box"> Marine Life Conservation </p>
+                                    <p class = "info-box"> 4-6 hours per day </p>
+                                </div>
+                                <div class = "duration">
+                                    <img src ="images/duration.jpg" alt = "duration">
+                                    <p><strong> Duration:</strong> 2 - 8 weeks </p>
+                                    <img src ="images/volunteer.jpg" alt = "volunteer">
+                                    <p><strong>Volunteers :</strong> aged 16+ and families</p>
+                                </div>
+                                <button class = "view-btn"> View Button </button>
+                                <button class = "apply-btn"> Apply </button>
+                            </div>
+
+                            <div class ="card">
+                                <img src = "images/volunteer3.jpg" alt = "Coral Reef Restoration">
+                                <h3> Coral Reef Conservation & Restoration Program </h3>
+                                <p> Volunteers help restore damaged coral reefs by planting coral fragments, monitoring reef health, and raising awareness about marine conservation.</p>
+                                <div class = "info">
+                                    <p class = "info-box"> Coral Reef Conservation </p>
+                                    <p class = "info-box"> 5-8 hours per day </p>
+                                </div>
+                                <div class = "duration">
+                                    <img src ="images/duration.jpg" alt = "duration">
+                                    <p><strong> Duration:</strong> 2 - 12 weeks </p>
+                                    <img src ="images/volunteer.jpg" alt = "volunteer">
+                                    <p><strong>Volunteers :</strong> aged 18+ </p>
+                                </div>
+                                <button class = "view-btn"> View Button </button>
+                                <button class = "apply-btn"> Apply </button>
+                            </div>
+
+                            <div class ="card">
+                                <img src = "images/volunteer4.jpg" alt = "Fisheries & Marine Research">
+                                <h3> Blue Ventures </h3>
+                                <p> Volunteers work with marine biologists to study fish populations, monitor ecosystems, and promote sustainable fishing practices.</p>
+
+                                <div class = "info">
+                                    <p class = "info-box"> Sustainable Fisheries & Marine Research </p>
+                                    <p class = "info-box"> 10 - 12 hours per day </p>
+                                </div>
+                                <div class = "duration">
+                                    <img src ="images/duration.jpg" alt = "duration">
+                                    <p><strong> Duration:</strong> 4- 16 weeks </p>
+                                    <img src ="images/volunteer.jpg" alt = "volunteer">
+                                    <p><strong>Volunteers :</strong> aged 18+ </p>
+                                </div>
+                                <button class = "view-btn"> View Button </button>
+                                <button class = "apply-btn"> Apply </button>
+                            </div>
+                        </div>
+                </section>
+
+            <!-- Reviews Section -->
+            <section class = "reviews">
+                <h2> 9.4/10 </h2>
+                <h4>Exceptional</h4>
+                <p> 100 reviews  </p>
+                <p><small>Reviews are verified unless labelled otherwise.</small>  </p>
+                
+                <h4> Recent reviews </h4>
+                <div class = "review-card">
+                    <h4> 10/10 </h4>
+                    <p>"Participating in the coral reef conservation and marine research project was a once-in-a-lifetime opportunity. I got hands-on experience in coral restoration, monitoring marine biodiversity, and understanding the threats to reef ecosystems. The scientists and volunteers were inspiring, and I felt like I was contributing to real change. This program deepened my love for marine life and gave me valuable conservation skills."</p>
+                    <p>- Oshadhi Ranawaka | Jan 14,2025</p>
+                    <a href = "#"> See more </a>
+                </div>
+
+                <div class = "review-card">
+                    <h4> 9/10 </h4>
+                    <p>"I volunteered for the marine wildlife rescue and rehabilitation program and had an amazing experience. I learned how to care for injured sea turtles, dolphins, and seals, and I helped release them back into the wild. The staff were knowledgeable and supportive, and I felt like I was making a difference. I highly recommend this program to anyone who loves animals and wants to help protect marine life."</p>
+                    <p>- Sara Fernando | Feb 2, 2025 </p>
+                    <a href = "#"> See more </a>
+                </div>
+            </section>
+
+            <!-- Feedback Section -->
+            <section class = "feedback-form">
+                <h3> Send us your review 
+                <button><img src = "images/review.jpg" alt = "review">
+                </button><button><img src = "images/review.jpg" alt = "review">
+                </button><button><img src = "images/review.jpg" alt = "review"></button>
+                <button><img src = "images/review.jpg" alt = "review">
+                <button><img src = "images/review.jpg" alt = "review"></button> </h3>
+                <textarea rows ="6" cols = "50" placeholder = "Got suggestions? We'd love to hear your ideas!"></textarea>
+                <div id = "error-message" style="color: #ac0b0b; display: none;"><b>AN ERROR OCCURED. PLEASE TRY AGAIN LATER.</b></div> <!-- Error message (hidden by default) -->
+                <button class = "feedback" id = "send-feedback"> Send Feedback </button>
+                <button class = "cancel"> Cancel </button>
+            </section>
+
+            <!-- Go to Top Button -->
+            <p class = "top"><a href="#top">Go to Top</a></p>
+            
+        </main>
+
+        <!-- JavaScript for Error message in feedback submit -->
+        <script>
+            document.getElementById('send-feedback').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                var errorMessage = document.getElementById('error-message');
+                errorMessage.style.display = 'block'; // Show the error message
+            });
+        </script>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Logo & Title -->
+                 <div class="footer-section">
+                    <img src="images/logo.png" alt="Life Below Water Logo" class="footer-logo">
+                    <h2>Life Below Water</h2>
+                 </div>
+    
+                 <!-- Links Section -->
+                  <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="table.html">Data</a></li>
+                        <li><a href="profile.html">User Profile</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="team.html">Team</a></li>
+                    </ul>
+                  </div>
+    
+                  <!-- Page Editors -->
+                  <div class="footer-section">
+                    <h3>Page Editors</h3>
+                    <ul>
+                        <li><a href="pageEditor_ST1.html">Student 1</a></li>
+                        <li><a href="pageEditor_ST2.html">Student 2</a></li>
+                        <li><a href="pageEditor_ST3.html">Student 3</a></li>
+                        <li><a href="pageEditor_ST4.html">Student 4</a></li>
+                    </ul>
+                  </div>
+            </div>
+    
+            <hr><!-- Horizontal Line -->
+    
+            <div class="footer-bottom">
+                &copy; 2025 Life Below Water &#124; All Rights Reserved
+            </div>
+        </footer>
+    </body>

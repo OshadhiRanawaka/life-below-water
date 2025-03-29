@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design meta tag -->
+    <title>Page Editor Student 1 - Oshadhi Ranawaka</title>
+
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pageEditor_validator.css">
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="top">
+        <div class="logo">
+            <img src="images/logo.png" alt="Life Below Water logo"> <!-- Website logo -->
+            <div class="logo-text">
+                <h1>Life Below Water</h1>
+                <p>Protecting Marine Life & Promoting Sustainability</p>
+            </div>
+        </div>
+
+        <!-- Responsive Menu Toggle -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Data</a></li>
+                <li><a href="profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section displaying student name -->
+    <section class="stud">
+        <h2>Oshadhi Ranawaka - Student 1</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!--Splash Screen page Section -->
+            <section>
+                <h2 id ="splash">Splash Page</h2>
+                    <h3>Technical Description</h3>
+                        <p><strong>HTML Techniques: </strong>Used HTML techniques like <b>meta refresh</b> tag to redirect users to the Home page in <b>4 seconds.</b>Used <b>section</b> and <b>div</b> tag to structure the content.Used <b>h1</b> for the heading, <b>p</b> for the description, and <b>ul</b> to make a list of the group members for a proper information layout.Used <b>img </b>tag to enter the image of the logo to the splash screen.
+                           Implemented an animated loader within a <b>div</b> tag to provide a visual cue for the users while they wait. </p> 
+                        <p><strong>CSS Techniques: </strong>Used CSS techniques to apply a full screen backgrounf image using <b>(url('images/background.jpg') no-repeat center center/cover;)</b> so the text of the page is written over the image.Used an <b>.overlay</b> with <b>rgbs(0,0,0,0.7)</b> to improve the text readability.
+                           Used properties of the <b>flex bow</b> like <b> display: flex ;felx-direction: column ;justify-content: center; align-items: center; text-align: center;</b> to align the content to the center.</p> 
+                           <p>Set a fixed position using <b>position: fixed; width: 100%; height: 100%</b> to keep the splash screen consistent.
+                           Created a rotating loader using with <b>@keyframes spin</b> , and created a border with 5px thickness and a white border-top and set the animation spin for <b>1 second linear infinite</b> for a smooth rotation of the loader.
+                           Applied border-radius of 50% to give the image of the logo a rounder shape.</p>
+                    
+                    <h3>Accessibility</h3>
+                        <p>Using white text over a dark overlay improves the readability of the content.Ensured that images contain <b>alt</b> attributes ,so it can assist the users if by chance the image is not visible.
+                            Kept the animated loader simple with colours that makes it clear.</p>
+                    
+                    <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST1.html#splashVal"> Validation Page - Splash Screen</a></p> <!--  -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="splash.html"> Splash Screen</a></p>
+            </section>
+
+            <!-- Volunteer Page Section -->
+            <section>
+                <h2 id ="volunteer">Volunteer Page</h2>
+                    <h3>Technical Description</h3>
+                        <p><strong>HTML Techniques: </strong>The content is wrapped in sections with an HTML <b>section</b> tag, which seperates each section with the class <b>.volunteer-section</b> for volunteer opportunities, <b>.reviews</b>for the reviews section and <b>.feedback-form</b> for getting user feedback.Within the sections <b>div</b> tags are used to further seperate different parts within the section.
+                            A <b>select</b> tag is used to creat dropdown list for users to sort the volunteer programs by popularity and recency or view all.The volunteer programs are presented as <b>cards</b> using <b>div class="card-container"</b> to ensure a grid like alignment.<b>img</b> tags are used to insert images to the volunteer-cards <b>button</b> tags are used to create 2 button, one for viewing more details and theother for applying.
+                            Used a <b>textarea</b> tag with sepcific number of rows and columns to ajust its size, which allows users to submit their suggestions and Action button are used to send feedback or cancel.
+                            A <b>div</b> tag is used with the <b>id : "error-message"</b> to display the error message.</p> 
+                        
+                        <p><strong>CSS Techniques: </strong>Used padding and rounded borders in the main section for identification and design.Used a grid layout <b>( display: grid; grid-template-columns: repeat(2, 1fr);)</b> for the volnteer card container.Used <b>bow-shadow </b> to show a soft shadow for depth.The width of the cards are calculated in way so that it fills the card container with padding.
+                            Used a <b>flex-box</b> for even spacing between the program details.Used <b>object-fit: cover; along with 100% width and appropriate height</b> so the images fit properly inside the card. Used a <b>Hover effect</b> on the buttons to make them pop when hovered.Used the <b>color: red</b> to clearly see the Error text when displayed and <b>dispaly: none</b> to initially hide the error message. 
+                            Used properties like <b>padding, magin, width, height,text-align, background-color</b> to improve the outlook of the webpage.</p>
+
+                        <p><strong>JavaScript Techniques:</strong> Used <b>addEventListener</b> method to attach an event listener to the send-feedback element.Used <b>event.preventDefault()</b> method to prevent default behavior of the feedback submission.The <b>display</b> property is chaned from <b>none to block</b> to make the error message visible. </p>
+
+                    <h3>Accessibility</h3>
+                        <p>Ensured that images contain <b>alt</b> attributes ,so it can assist the users if by chance the image is not visible.Used a high contrast between text and background for readability.Used descriptive labels for dropdowns and form inputs for clarity.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST1.html#volunteerVal"> Validation Page - Volunteer page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="volunteer.html">Volunteer Page</a></p>
+            </section>
+
+            <!-- Content Page Section -->
+            <section>
+                <h2 id ="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p><strong>HTMLTechniques: </strong>The page is structured using <b>section</b> tags to logically group content.Header tags like <b>h1, h2, h3</b> are used to provide section seperation.Paragraphs are written using the <b>p</b> tag which has the content of the page.
+                           Used unordered lists to implement key facts using the <b>ul</b> tag.Images are included usingbthe <b>img</b> tags to create a user friendly webpage.</p>
+                           
+                        <p><strong>CSS Techniques: </strong>The page follows an ocean themed design using background colors to fit that theme.The <b>main</b> section is centered using a max width of 1200px, and using margin auto for proper alignment.<b>Line-height</b> is used to improve readability of the page.The side bar made to stay in position when scrolling by using <b>position: sticky;</b>.
+                           The images are formatted to be fully responsive using <b>max-width:100%,height: auto;</b> and have rounded the edges uding <b>border-radius</b>.The links on the side bar has been linked to its respective section and has a hover effect of changing color when hovered.<b>@media (max-width: 900px)</b> is used to make the webpage adjustable to different screen sizes.CSS properties like <b>display, flex, flex-direction, padding, margin,align-items</b> is used to structure the page appropriately.</p>   
+
+                    <h3>Accessibility</h3>
+                        <p> Ensured the image contains the alt attributes to support screen readers.Also ensured that there is a sufficient color contrast for readability.
+                            Ensured keyboard navigation with properly structured buttons
+                            ARIA labels are present for enhanced usability</p>
+
+                    <h3>Link to the validation page</h3> <!--  -->
+                        <p><a href="validation_ST1.html#contentVal"> Validation Page - Content Page</a></p> <!-- -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content_ST1.html">Content page</a></p>
+            </section>
+
+            <!-- Challenges and Lessons Learned Section -->
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p><strong>Splash-Screen: </strong>Challenges like ensuring the overlay enhanced the readability without affecting the background image,getting the content to align to the center including the animated loader appered when implementing this page.However these challenges were overcome by using CSS properties like flex box specially <b>felx-direction: column</b> to get the alignment of the entire content to the center of the page.
+                       The overlay was implemnted to be applied to the entire webpage by adding it the entire section. Also animations can be used to improve the user experience but should be lightweight.</p> 
+
+                    <p><strong>Volunteer-page: </strong>Challenges like ensuring that the volunteer cards appear in a grid layout, maintaing a constant card height so all the content within the card would fit inside it clearly and displaying an error messsage when a feeback is typed and sent using the <b>send feedback button</b> were faced but thet were overcome by using CSS Grid efficiently to create the layout and using JavaScript to display the error messahe using and id.
+                        Also by balancing the designing with the funtionality to we can provide an engaing user experience.</p>
+                        
+                    <p><strong>Content-Page: </strong> Challenges like ensuring images maintain proper aspect ratios on all screen sizes and balancing content density with readability occured.
+                        However they were overcome by optimizing images using CSS techniques for responsive scaling.
+                        Maintaining accessibility best practices is important to provide the user an inclusive experience.</p>    
+            </section>
+
+            <!-- Compliance Section -->
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>The web pages created adhere to JANET web publication regulationshas.Has a sematic HTML structure using <b>section, h1, p, button</b>.Has <b>alt</b> text for images.
+                        Consistent CSS for readability and visual hierarchy.
+                        Has a responsive design with flexbox and grid for different screen size adaptation.
+                        Validated the  HTML & CSS for comliance using W3C validation. <b>.</b></p> 
+
+                    
+            </section>
+
+            <!-- References Section -->
+            <section>
+                <h2 id="ref">References</h2>
+                <p> These are the references used to implement the web pages.<br><br>
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 8 March 2025).</li>
+                        <li>W3Schools HTML Tutorial.Available at:<a href = "#"> https://www.w3schools.com/html/</a> (Last accessed: 9 March 2025). </li>
+                        <li>W3Schools CSS Tutorial.Available at:<a href = "#"> https://www.w3schools.com/css/</a> (Last accessed: 9 March 2025).</li>
+                        <li>W3Schools JS Tutorial.Available at:<a href = "#"> https://www.w3schools.com/js/</a> (Last accessed: 9 March 2025). </li>
+                        <li>W3C Web Accessibility Initiative.Available at:<a href = "#"> https://www.w3.org/WAI/></a>(Last accessed: 9 March 2025).</li>
+                        <li>W3C Mrakup validation service.Available at:<a href = "#"> https://validator.w3.org/#validate_by_input</a> (Last accessed: 9 March 2025).</li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go to Top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+            <ul class="top-level-ul">
+                <li>Student 1
+                    <ul>   
+                        <li><a href="#splash">Splash page</a></li>
+                        <li><a href="#volunteer">Volunteer page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                </li>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class = "footer">
+        <div class="footer-container">
+            <!-- Logo & Title -->
+            <div class="footer-section">
+                <img src="images/logo.png" alt="Life Below Water Logo" class="footer-logo">
+                <h2>Life Below Water</h2>
+            </div>
+
+            <!-- Links Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Data</a></li>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </div>
+
+            <!-- Page Editors -->
+            <div class="footer-section">
+                <h3>Page Editors</h3>
+                <ul>
+                    <li><a href="pageEditor_ST1.html">Student 1</a></li>
+                    <li><a href="pageEditor_ST2.html">Student 2</a></li>
+                    <li><a href="pageEditor_ST3.html">Student 3</a></li>
+                    <li><a href="pageEditor_ST4.html">Student 4</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Horizontal Line -->
+        <hr>
+
+        <div class="footer-bottom">
+            &copy; 2025 Life Below Water &#124; All Rights Reserved
+        </div>
+    </footer>
+</body>
+</html>
